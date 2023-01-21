@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../Button/button";
 
 const AboutMe = () => {
   return (
-    <div className="border-4 w-3/5 m-auto bg-slate-200 mt-20 rounded-full flex justify-center items-center p-10">
+    <div className="border-4 w-3/5 m-auto bg-slate-300 mt-36 rounded-full flex justify-center items-center p-10">
       <div className="">
         <Image
           className="rounded-full"
@@ -11,6 +12,7 @@ const AboutMe = () => {
           width={1000}
           height={1000}
           alt="error loading"
+          priority="true"
         />
       </div>
       <div className="flex-grow py-14 px-16 flex flex-col gap-3 text-justify">
@@ -23,6 +25,7 @@ const AboutMe = () => {
           nisi similique odio temporibus iste, reiciendis dolorum, accusantium
           unde nobis explicabo.
         </p>
+        <Button title="Download CV" round={true} />
       </div>
     </div>
   );
