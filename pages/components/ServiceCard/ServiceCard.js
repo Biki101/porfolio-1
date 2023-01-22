@@ -3,10 +3,9 @@ import React from "react";
 import Button from "../Button/button";
 
 const ServiceCard = (props) => {
-  const { imageUrl, title, details, projectlink } = props;
-  //   console.log(imageUrl);
+  const { imageUrl, title, projectlink } = props;
   return (
-    <div className="w-80 text-left border border-red flex flex-col justify-between">
+    <div className="w-80 text-left flex flex-col justify-between gap-10">
       <div>
         <Image
           className="w-full rounded-full p-12 border-2 border-black"
@@ -17,10 +16,8 @@ const ServiceCard = (props) => {
           alt="error loading"
         />
       </div>
-      <div className="">
+      <div className="flex flex-col items-center">
         <p className="text-2xl mt-8">{title}</p>
-        <p className="text-xl mt-3 text-justify">{details}</p>
-        <Button className="mt-5" round="false" title="See Work" />
       </div>
     </div>
   );

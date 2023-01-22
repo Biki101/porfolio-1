@@ -6,8 +6,8 @@ const Button = (props) => {
     <div
       className={`${
         props.round
-          ? "bg-red-800 cursor-pointer text-white px-4 py-3 w-40 text-center rounded-full hover:bg-black mt-10"
-          : ""
+          ? "bg-red-800 cursor-pointer text-white px-4 py-3 w-40 text-center rounded-full hover:bg-black mt-10 "
+          : "bg-red-800 cursor-pointer text-white px-4 py-3 w-40 m-auto text-center rounded-full hover:bg-black mt-10"
       }`}
     >
       {props.title}

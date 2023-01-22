@@ -3,7 +3,8 @@ import React from "react";
 const HomePage = () => {
   return (
     <div
-      className="home_image bg-cover flex justify-center items-center bg-no-repeat"
+      id="home"
+      className="home_image bg-cover flex justify-center items-center bg-no-repeat relative top-0 left-0 z-[1]"
       style={{
         backgroundImage: `url("/header.jpg")`,
         height: "100vh",
