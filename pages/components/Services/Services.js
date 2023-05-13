@@ -27,7 +27,7 @@ const Services = () => {
         <h2 className="text-2xl">What I Do?</h2>
         <h1 className="text-4xl text-yellow-800 my-10">Services</h1>
       </div>
-      <div className="w-3/4 m-auto text-center flex justify-between items-center">
+      <div className="w-3/4 m-auto text-center flex flex-wrap justify-between items-center">
         {services.map(({ title, ...serviceProps }) => (
           <ServiceCard {...serviceProps} title={title} key={title} />
         ))}
